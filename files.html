@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="./files.css">
+</head>
+<body>
+	<form action="" name="files">
+		<fieldset>
+			<legend align="center">学生档案</legend>
+
+			<label for="name">姓名：</label>
+			<input type="text" autocomplete="off" name="userName" id="name" autofocus required>
+
+			<label for="telp">手机号:</label>
+			<input type="tel" id="telp" autocomplete="off" required>
+
+			<label for="addressEmail">邮箱地址:</label>
+			<input type="email" id="addressEmail" required>
+
+			<label for="collage">所属学院:</label>
+			<input type="text" id="collage" list="sonCollage" placeholder="请选择">
+				<datalist id="sonCollage">
+					<option value="前端与移动开发学院"></option>
+					<option value="Java学院"></option>
+					<option value="c++学院"></option>
+					<option value="php学院"></option>
+				</datalist>
+
+			<label for="score">入学成绩:</label>
+			<input type="number" id="score" max="100" min="0" required>
+
+			<label for="level">基础水平:</label>
+			<meter id="level" max="100" min="0" low="59" high="90"></meter>
+
+			<label for="inTime">入学日期:</label>
+			<input type="date" id="inTime">
+
+			<label for="leaveTime">毕业日期:</label>
+			<input type="date" id="leaveTime">
+
+			<input type="submit"> 
+			<input type="reset">
+		</fieldset>
+	</form>
+</body>
+</html>
